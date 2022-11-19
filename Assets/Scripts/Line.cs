@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class Line : MonoBehaviour {
 
 	public LineRenderer lineRenderer;
-	public EdgeCollider2D edgeCollider;
+	public EdgeCollider2d edgeCollider;
 	public Rigidbody2D rigidBody;
 
 	[HideInInspector] public List<Vector2> points = new List<Vector2> ( );
