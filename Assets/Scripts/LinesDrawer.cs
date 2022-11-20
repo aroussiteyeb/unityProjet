@@ -2,7 +2,8 @@
 
 public class LinesDrawer : MonoBehaviour {
 
-	public GameObject linePrefa;
+	public GameObject linePrefabb;
+
 	public LayerMask cantDrawOverLayer;
 	int cantDrawOverLayerIndex;
 
@@ -34,7 +35,8 @@ public class LinesDrawer : MonoBehaviour {
 
 	// Begin Draw ----------------------------------------------
 	void BeginDraw ( ) {
-		currentLine = Instantiate ( linePrefa, this.transform ).GetComponent <Line> ( );
+		currentLine = Instantiate ( linePrefabb, this.transform ).GetComponent <Line> ( );
+
 
 		//Set line properties
 		currentLine.UsePhysics ( false );
